@@ -1,0 +1,22 @@
+td {
+  color:black;
+}
+
+thead{
+  background-color: rgb(242,242,242);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  border-bottom-style: solid;
+  border-bottom-width: 1%;
+  border-bottom-color: rgb(112, 112, 112);
+}
+
+.LastRow{
+  border-bottom-style: solid;
+  border-bottom-width: 1%;
+  border-bottom-color: rgb(112, 112, 112);
+}
+
+ * {
+  text-align: left;
+}
