@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import './configuration'
 import './table.css'
-
+import i18n from '../i18n';
 
 
 class DetailedTableRow extends React.Component {
     render() {
+        localStorage.clear()
         return (
             <>
                 <table className="table table-striped table-sm col-sm-8">
@@ -50,7 +51,7 @@ class DetailedTableRow extends React.Component {
                         </tr>
                     </tbody>
                 </table>
-                <Link className="text-secondary" to={"/"}> <strong>Back</strong></Link>
+                <Link className="text-secondary" to={"/"}> <strong>{Object.values(i18n.t('backButton', { returnObjects: true }))}</strong></Link>
             </>
         );
     }

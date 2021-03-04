@@ -45,6 +45,7 @@ class Home extends Component {
     };
 
     render() {
+        localStorage.clear();
         var { isLoaded, customers } = this.state;
         if (!isLoaded) {
             return <div>Loading...</div>;

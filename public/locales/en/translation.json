@@ -4,5 +4,8 @@
     },
     "buttonNext": {
         "1": "Next"
-    }
+    },
+	"backButton": {
+		"1": "Back" 
+	}
 }
