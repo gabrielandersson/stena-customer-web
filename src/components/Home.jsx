@@ -3,6 +3,7 @@ import config from 'react-global-configuration';
 import ReactPaginate from 'react-paginate';
 import CommentList from './CommentList'
 import './configuration'
+import i18n from '../i18n';
 
 class Home extends Component {
     state = {
@@ -57,8 +58,8 @@ class Home extends Component {
                         </tbody>
                     </table>
                     <ReactPaginate
-                        previousLabel={"prev"}
-                        nextLabel={"next"}
+                        previousLabel={Object.values(i18n.t('buttonPrev', { returnObjects: true }))}
+                        nextLabel={Object.values(i18n.t('buttonNext', { returnObjects: true }))}
                         breakLabel={"..."}
                         breakClassName={"break-me"}
                         pageCount={this.state.pageCount}
